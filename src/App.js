@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'antd-mobile';
+// import { Button } from 'antd-mobile';
 import Footer from './components/footer/footer'
 import Home from './pages/Home/home'
 import Parking from './pages/Parking/parking'
@@ -15,8 +15,6 @@ import {
 function App() {
   return (
     <div className="App">
-     hello
-     <Button type="primary" inline style={{ marginRight: '4px' }} size="small">按钮</Button>
      <Router>
        <Footer/>
        <Switch>
