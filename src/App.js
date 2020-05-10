@@ -7,7 +7,7 @@ import Navigation from './components/Navigation/navigation'
 import Person from './components/Person/person'
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
