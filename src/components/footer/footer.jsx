@@ -4,7 +4,10 @@ import './footer.scss'
 import {
   NavLink
 } from "react-router-dom";
-
+import home_icon from '../../assest/img/icon_person.png';
+import parking_icon from '../../assest/img/icon_parking.png';
+import navigation_icon from '../../assest/img/icon_navigation.png';
+import person_icon from '../../assest/img/icon_person.png';
 
 export default class Footer extends React.Component {
     // constructor(props) {
@@ -19,15 +22,19 @@ export default class Footer extends React.Component {
         return (
           <div className="footer-box">
             <span>
+              <img src={home_icon} className="icon_footer" alt="person"/>
               <NavLink to="/home">首页</NavLink>
             </span>
             <span>
+              <img src={parking_icon} className="icon_footer" alt="person"/>
               <NavLink to="/parking">停车</NavLink>
             </span>
             <span>
+              <img src={navigation_icon} className="icon_footer" alt="person"/>
               <NavLink to="/navigation">导航</NavLink>
             </span>
             <span>
+              <img src={person_icon} className="icon_footer" alt="person"/>
               <NavLink to="/person">我的</NavLink>
             </span>
           </div>

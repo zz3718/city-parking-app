@@ -4,4 +4,29 @@
     justify-content: space-around;
     position: fixed;
     bottom: 0;
+    > span {
+        display: inline-block;
+        // position: relative;
+        a {
+            font-size: 14px;
+            color: #333;
+            display: block;
+            text-align: center;
+        }
+        .active {
+            color: #1EC18B;
+        }
+        .icon_footer {
+            width: 30px;
+            height: 30px;
+        }
+        // img {
+        //     position: absolute;
+        //     bottom: 16px;
+        //     display: inline-block;
+        //     width: 46px;
+        //     height: 46px;
+        // }
+    }
+
 }
