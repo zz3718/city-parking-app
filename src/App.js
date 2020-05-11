@@ -5,11 +5,13 @@ import Home from './pages/Home/home'
 import Parking from './pages/Parking/parking'
 import Navigation from './pages/Navigation/navigation'
 import Person from './pages/Person/person'
+import NotFount from './pages/NotFount/notFount'
 
 import {
   HashRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
 
 function App() {
@@ -18,7 +20,8 @@ function App() {
      <Router>
        <Footer/>
        <Switch>
-        <Route exact strict path="/home">
+        {/* <Route path="/" component={Home} exact /> */}
+        <Route exact path="/home">
             <Home />
         </Route>
         <Route exact strict path="/parking">
@@ -30,10 +33,10 @@ function App() {
         <Route exact strict path="/person">
             <Person />
         </Route>
+        <Redirect path="/" to="/home" />
+        <Route component={NotFount}/>
        </Switch>
      </Router>
-     
-     
     </div>
   );
 }
