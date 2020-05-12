@@ -8,18 +8,24 @@ import parking_icon from '../../assest/img/tingche.png'
 import youhuquan_icon from '../../assest/img/youhuiquan.png'
 import set_icon from '../../assest/img/set_icon.png'
 import suggest_icon from '../../assest/img/suggest_icon.png'
+import {
+  withRouter
+} from "react-router-dom";
 const Item = List.Item;
-export default class Person extends React.Component{
+class Person extends React.Component{
+	handleLogin = () => {
+		this.props.history.push('/login')
+	}
 	render () {
 		return (
 			<div>
 				<NavBar
 				mode="light"
 				icon={<Icon type="left" />}
-				onLeftClick={() => console.log('onLeftClick')}
+				onLeftClick={() => { this.props.history.go(-1) }}
 				>我的</NavBar>
 				<div className="person-container">
-					<div className="person-top">
+					<div className="person-top" onClick={ this.handleLogin }>
 						<img src={person_icon} alt=""/>
 						<span>车主</span>
 					</div>
@@ -68,3 +74,4 @@ export default class Person extends React.Component{
 		)
 	}
 }
+export default withRouter((Person))

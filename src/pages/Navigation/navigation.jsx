@@ -7,7 +7,7 @@ export default class Navigation extends React.Component{
                 <NavBar
                 mode="light"
                 icon={<Icon type="left" />}
-                onLeftClick={() => console.log('onLeftClick')}
+                onLeftClick={() => { this.props.history.go(-1) }}
                 >导航</NavBar>
                 <div>
                     导航

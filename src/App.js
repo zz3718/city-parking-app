@@ -6,6 +6,7 @@ import Parking from './pages/Parking/parking'
 import Navigation from './pages/Navigation/navigation'
 import Person from './pages/Person/person'
 import NotFount from './pages/NotFount/notFount'
+import Login from './pages/Login/login'
 
 import {
   HashRouter as Router,
@@ -32,6 +33,9 @@ function App() {
         </Route>
         <Route exact strict path="/person">
             <Person />
+        </Route>
+        <Route exact strict path="/login">
+            <Login />
         </Route>
         <Redirect path="/" to="/home" />
         <Route component={NotFount}/>
