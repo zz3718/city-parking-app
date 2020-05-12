@@ -1,12 +1,15 @@
 import React from 'react'
 import './login.scss'
 import { NavBar, Icon, List, Button } from 'antd-mobile';
-export default class Login extends React.Component {
+import {
+  withRouter
+} from "react-router-dom";
+class Login extends React.Component {
 	login = () => {
 		console.log('点击登录')
 	}
 	register = () => {
-		console.log('点击新用户注册')
+		this.props.history.push('/register')
 	}
 	render () {
 		return (
@@ -49,3 +52,4 @@ export default class Login extends React.Component {
 		)
 	}
 }
+export default withRouter((Login))

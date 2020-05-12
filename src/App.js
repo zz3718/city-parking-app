@@ -7,6 +7,7 @@ import Navigation from './pages/Navigation/navigation'
 import Person from './pages/Person/person'
 import NotFount from './pages/NotFount/notFount'
 import Login from './pages/Login/login'
+import Register from './pages/Register/register'
 
 import {
   HashRouter as Router,
@@ -35,6 +36,9 @@ function App() {
         </Route>
         <Route exact strict path="/login">
             <Login />
+        </Route>
+        <Route exact strict path="/register">
+            <Register />
         </Route>
         <Redirect path="/" to="/home" />
         <Route component={NotFount}/>
