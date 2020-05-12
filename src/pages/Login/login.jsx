@@ -5,6 +5,9 @@ export default class Login extends React.Component {
 	login = () => {
 		console.log('点击登录')
 	}
+	register = () => {
+		console.log('点击新用户注册')
+	}
 	render () {
 		return (
 			<div className="login-container">
@@ -13,6 +16,7 @@ export default class Login extends React.Component {
 						mode="light"
 						icon={<Icon type="left" />}
 						onLeftClick={() => { this.props.history.go(-1) }}
+						rightContent={<span onClick={ this.register }>新用户注册</span>}
 						>登录</NavBar>
 						<div className="login-content">
 							<div className="login-title">城市停车登录</div>
