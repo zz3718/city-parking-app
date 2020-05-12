@@ -19,7 +19,6 @@ function App() {
   return (
     <div className="App">
      <Router>
-       <Footer/>
        <Switch>
         {/* <Route path="/" component={Home} exact /> */}
         <Route exact path="/home">
@@ -40,6 +39,7 @@ function App() {
         <Redirect path="/" to="/home" />
         <Route component={NotFount}/>
        </Switch>
+       <Footer/>
      </Router>
     </div>
   );
