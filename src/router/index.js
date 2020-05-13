@@ -6,6 +6,7 @@ import {
 	Redirect
 } from "react-router-dom";
 import Footer from '../components/footer/footer'
+// const Footer = asyncComponent(() => import("../components/footer/footer"))
 import Home from '../pages/Home/home'
 import Parking from '../pages/Parking/parking'
 import Navigation from '../pages/Navigation/navigation'
@@ -20,24 +21,15 @@ export default class RouterConfig extends React.Component {
 			<Router>
 				<Switch>
 				{/* <Route path="/" component={Home} exact /> */}
-				<Route exact path="/home">
+				{/* <Route exact path="/home">
 					<Home />
-				</Route>
-				<Route exact strict path="/parking">
-					<Parking />
-				</Route>
-				<Route exact strict path="/navigation">
-					<Navigation />
-				</Route>
-				<Route exact strict path="/person">
-					<Person />
-				</Route>
-				<Route exact strict path="/login">
-					<Login />
-				</Route>
-				<Route exact strict path="/register">
-					<Register />
-				</Route>
+				</Route> */}
+				<Route exact path="/home" component={ Home }/>
+				<Route exact path="/parking" component={ Parking }/>
+				<Route exact path="/navigation" component={ Navigation }/>
+				<Route exact path="/person" component={ Person }/>
+				<Route exact path="/login" component={ Login }/>
+				<Route exact path="/register" component={ Register }/>
 				<Redirect path="/" to="/home" />
 				<Route component={NotFount}/>
 				</Switch>
