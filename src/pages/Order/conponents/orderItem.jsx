@@ -5,8 +5,10 @@ export default class OrderItem extends React.Component {
         super(props)
         this.state={ }
     }
+    // handleDetail = (item) => {
+    //     console.log(item)
+    // }
     render () {
-        console.log(this.props)
         return (
             <div className="list-box">
                 {
