@@ -49,14 +49,14 @@ export default class OrderList extends React.Component{
                     onChange={(tab, index) => { console.log('onChange', index, tab); }}
                     onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}
                     >
-                    <div style={{ backgroundColor: '#fff' }}>
+                    <div>
                         <OrderItem orderData={this.state.orderData}/>
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                        Content of second tab
+                    <div>
+                        <OrderItem orderData={this.state.orderData}/>
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-                        Content of third tab
+                    <div>
+                        <OrderItem orderData={this.state.orderData}/>
                     </div>
                 </Tabs>
                 </div>
