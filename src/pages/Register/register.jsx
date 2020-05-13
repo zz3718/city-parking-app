@@ -24,25 +24,25 @@ class Register extends React.Component {
 											<div className="form-item">
 													<label htmlFor="">手机号：</label>
 													<div className="form-input">
-															<input type="text"/>
+														<input type="text"/>
 													</div>
 											</div>
 											<div className="form-item">
 													<label htmlFor="">用户名：</label>
 													<div className="form-input">
-															<input type="text"/>
+														<input type="text"/>
 													</div>
 											</div>
 											<div className="form-item">
 													<label htmlFor="">邮箱：</label>
 													<div className="form-input">
-															<input type="text"/>
+														<input type="text"/>
 													</div>
 											</div>
 											<div className="form-item">
 													<label htmlFor="">密码：</label>
 													<div className="form-input">
-															<input type="text"/>
+														<input type="text"/>
 													</div>
 											</div>
 									</form>

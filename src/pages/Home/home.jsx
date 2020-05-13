@@ -1,8 +1,8 @@
 import React from 'react'
 import './home.scss'
 import { SearchBar } from 'antd-mobile';
-import add_icon from '../../assest/img/icon_add.png'
-import add_bg_icon from '../../assest/img/add_bg.png'
+import add_icon from '@/assest/img/icon_add.png'
+import add_bg_icon from '@/assest/img/add_bg.png'
 export default class Home extends React.Component {
     addClickCar = () => {
         console.log('添加车辆')

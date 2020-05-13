@@ -1,13 +1,13 @@
 import React from 'react'
 import './poson.scss'
 import { NavBar, Icon, List } from 'antd-mobile';
-import person_icon from '../../assest/img/person_icon.png'
-import shoucang_icon from '../../assest/img/shoucang.png'
-import order_icon from '../../assest/img/dingdan.png'
-import parking_icon from '../../assest/img/tingche.png'
-import youhuquan_icon from '../../assest/img/youhuiquan.png'
-import set_icon from '../../assest/img/set_icon.png'
-import suggest_icon from '../../assest/img/suggest_icon.png'
+import person_icon from '@/assest/img/person_icon.png'
+import shoucang_icon from '@/assest/img/shoucang.png'
+import order_icon from '@/assest/img/dingdan.png'
+import parking_icon from '@/assest/img/tingche.png'
+import youhuquan_icon from '@/assest/img/youhuiquan.png'
+import set_icon from '@/assest/img/set_icon.png'
+import suggest_icon from '@/assest/img/suggest_icon.png'
 import {
   withRouter
 } from "react-router-dom";

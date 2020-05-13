@@ -5,15 +5,15 @@ import {
 	Route,
 	Redirect
 } from "react-router-dom";
-import Footer from '../components/footer/footer'
-// const Footer = asyncComponent(() => import("../components/footer/footer"))
-import Home from '../pages/Home/home'
-import Parking from '../pages/Parking/parking'
-import Navigation from '../pages/Navigation/navigation'
-import Person from '../pages/Person/person'
-import NotFount from '../pages/NotFount/notFount'
-import Login from '../pages/Login/login'
-import Register from '../pages/Register/register'
+import Footer from '@/components/footer/footer'
+// const Footer = asyncComponent(() => import("@/components/footer/footer"))
+import Home from '@/pages/Home/home'
+import Parking from '@/pages/Parking/parking'
+import Navigation from '@/pages/Navigation/navigation'
+import Person from '@/pages/Person/person'
+import NotFount from '@/pages/NotFount/notFount'
+import Login from '@/pages/Login/login'
+import Register from '@/pages/Register/register'
 
 export default class RouterConfig extends React.Component {
 	render () {
