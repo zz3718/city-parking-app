@@ -1,0 +1,15 @@
+.parking-container {
+    .parking-contant {
+        padding: 16px;
+    }
+    .park-num {
+        text-align: center;
+    }
+    .btn-box {
+        display: flex;
+        justify-content: center;
+        a {
+            margin: 10px;
+        }
+    }
+}
