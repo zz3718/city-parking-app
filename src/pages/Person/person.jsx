@@ -36,11 +36,11 @@ class Person extends React.Component{
 								<img src={youhuquan_icon} alt=""/>
 								<div>优惠券</div>
 							</div>
-							<div>
+							<div onClick={() => { this.props.history.push('/orderList') }}>
 								<img src={order_icon} alt=""/>
 								<div>我的订单</div>
 							</div>
-							<div>
+							<div onClick={() => { this.props.history.push('/collection') }}>
 								<img src={shoucang_icon} alt=""/>
 								<div>收藏车场</div>
 							</div>

@@ -14,6 +14,9 @@ import Person from '@/pages/Person/person'
 import NotFount from '@/pages/NotFount/notFount'
 import Login from '@/pages/Login/login'
 import Register from '@/pages/Register/register'
+import OrderList from '@/pages/Order/orderList'
+import OrderDetail from '@/pages/Order/orderDetail'
+import Collection from '@/pages/collection/collection'
 
 export default class RouterConfig extends React.Component {
 	render () {
@@ -30,6 +33,9 @@ export default class RouterConfig extends React.Component {
 				<Route exact path="/person" component={ Person }/>
 				<Route exact path="/login" component={ Login }/>
 				<Route exact path="/register" component={ Register }/>
+				<Route exact path="/orderList" component={ OrderList }/>
+				<Route exact path="/orderDetail" component={ OrderDetail }/>
+				<Route exact path="/collection" component={ Collection }/>
 				<Redirect path="/" to="/home" />
 				<Route component={NotFount}/>
 				</Switch>
