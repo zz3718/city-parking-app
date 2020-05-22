@@ -14,27 +14,37 @@ export default class OrderList extends React.Component{
             orderData: [{
                 plateNo: '浙A·877927',
                 state: '已完成',
-                parkingName: '东冠恒鑫大厦停车场',
+                parkingName: '东冠恒鑫大厦停车场1',
                 parkingTime: '停车3小时15分钟',
                 parkingIn: '2020-07-22 15:05:00',
                 parkingOut: '2018-07-22 15:05:00'
             },{
                 plateNo: '浙A·877927',
                 state: '已完成',
-                parkingName: '东冠恒鑫大厦停车场',
+                parkingName: '东冠恒鑫大厦停车场2',
                 parkingTime: '停车3小时15分钟',
                 parkingIn: '2020-07-22 15:05:00',
                 parkingOut: '2018-07-22 15:05:00'
             },{
                 plateNo: '浙A·877927',
                 state: '已完成',
-                parkingName: '东冠恒鑫大厦停车场',
+                parkingName: '东冠恒鑫大厦停车场3',
                 parkingTime: '停车3小时15分钟',
                 parkingIn: '2020-07-22 15:05:00',
                 parkingOut: '2018-07-22 15:05:00'
             }]
         }
+        // this.handlerClick = this.handlerClick.bind(this)
     }
+    // handlerClick = function(item){
+    //     console.log(item, '===item')
+    // }
+    // handlerClick = (item) => {
+    //     console.log(item)
+    // }
+    // componentDidMount() {
+    //     console.log(this.handlerClick)
+    // }
     render () {
         return (
             <div className="order-list-container">
@@ -50,6 +60,15 @@ export default class OrderList extends React.Component{
                     onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}
                     >
                     <div>
+                        {/* <ul>
+                            {
+                                this.state.orderData.map((item, index) => {
+                                    return (
+                                    <li key={index} onClick={this.handlerClick.bind('',item)}>{ item.parkingName }</li>
+                                    )
+                                })
+                            }
+                        </ul> */}
                         <OrderItem orderData={this.state.orderData}/>
                     </div>
                     <div>

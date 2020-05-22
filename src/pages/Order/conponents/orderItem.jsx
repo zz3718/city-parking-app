@@ -5,16 +5,16 @@ export default class OrderItem extends React.Component {
         super(props)
         this.state={ }
     }
-    // handleDetail = (item) => {
-    //     console.log(item)
-    // }
+    handleDetail = (item) => {
+        console.log(item)
+    }
     render () {
         return (
             <div className="list-box">
                 {
                     this.props.orderData.map((item, index) => {
                         return (
-                            <div className="list-item" key={index}>
+                            <div className="list-item" key={index} onClick={ this.handleDetail.bind(this, item) }>
                                 <div className="list-item-top">
                                     <span className="list-item-plate">{ item.plateNo }</span>
                                     <span className="list-item-status">{ item.state }</span>
