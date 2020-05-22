@@ -1,12 +1,14 @@
 import React from 'react'
 import './orderItem.scss'
-export default class OrderItem extends React.Component {
+import  { withRouter } from 'react-router-dom'
+class OrderItem extends React.Component {
     constructor(props) {
         super(props)
         this.state={ }
     }
     handleDetail = (item) => {
         console.log(item)
+        this.props.history.push('/orderDetail')
     }
     render () {
         return (
@@ -39,3 +41,4 @@ export default class OrderItem extends React.Component {
         )
     }
 }
+export default withRouter(OrderItem)
