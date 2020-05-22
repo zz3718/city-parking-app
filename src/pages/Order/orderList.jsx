@@ -17,21 +17,24 @@ export default class OrderList extends React.Component{
                 parkingName: '东冠恒鑫大厦停车场1',
                 parkingTime: '停车3小时15分钟',
                 parkingIn: '2020-07-22 15:05:00',
-                parkingOut: '2018-07-22 15:05:00'
+                parkingOut: '2018-07-22 15:05:00',
+                id: 1
             },{
                 plateNo: '浙A·877927',
                 state: '已完成',
                 parkingName: '东冠恒鑫大厦停车场2',
                 parkingTime: '停车3小时15分钟',
                 parkingIn: '2020-07-22 15:05:00',
-                parkingOut: '2018-07-22 15:05:00'
+                parkingOut: '2018-07-22 15:05:00',
+                id: 2
             },{
                 plateNo: '浙A·877927',
                 state: '已完成',
                 parkingName: '东冠恒鑫大厦停车场3',
                 parkingTime: '停车3小时15分钟',
                 parkingIn: '2020-07-22 15:05:00',
-                parkingOut: '2018-07-22 15:05:00'
+                parkingOut: '2018-07-22 15:05:00',
+                id: 3
             }]
         }
         // this.handlerClick = this.handlerClick.bind(this)
