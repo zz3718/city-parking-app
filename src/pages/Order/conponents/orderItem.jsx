@@ -8,7 +8,7 @@ class OrderItem extends React.Component {
     }
     handleDetail = (item) => {
         console.log(item)
-        this.props.history.push('/orderDetail')
+        this.props.history.push(`/orderDetail/${item.id}`)
     }
     render () {
         return (

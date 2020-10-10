@@ -34,7 +34,7 @@ export default class RouterConfig extends React.Component {
 				<Route exact path="/login" component={ Login }/>
 				<Route exact path="/register" component={ Register }/>
 				<Route exact path="/orderList" component={ OrderList }/>
-				<Route exact path="/orderDetail" component={ OrderDetail }/>
+				<Route exact path="/orderDetail/:id?" component={ OrderDetail }/>
 				<Route exact path="/collection" component={ Collection }/>
 				<Redirect path="/" to="/home" />
 				<Route component={NotFount}/>
